@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-color:#070707;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+  height: 20vh;
+}
+
+.app-title{
+  padding-top: 2vh;
+  margin-bottom: 1vh;
+  text-align: center; 
+}
+
+.headline{
+  text-align: center;
+}
+
+/* main{
+
+} */
+
+.task-input{
+  height: 20vh;
+  padding: 5vh;
+  text-align: center;
+}
+
+.central-heading{
+  margin: 5vh;
+  text-align: center;
+}
