@@ -22,7 +22,7 @@ function showingToDoTasks(){
     let todoObject = toDoTasks[index];
     let name = todoObject.name;
     let dueDate = todoObject.dueDate;
-    let todoHtml = `<p>
+    let todoHtml = `<p class="task">
                         ${name} ${dueDate}
                         <button class="delete-task-btn" onclick="btnDeleteTask('${todoObject}')">delete
                         </button>
