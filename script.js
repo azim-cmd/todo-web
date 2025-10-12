@@ -22,11 +22,11 @@ function showingToDoTasks(){
     let todoObject = toDoTasks[index];
     let name = todoObject.name;
     let dueDate = todoObject.dueDate;
-    let todoHtml = `<p class="task">
-                        ${name} ${dueDate}
+    let todoHtml = `<div class="task">
+                        <p>${name}</p> <p class="date-class">${dueDate}</p>
                         <button class="delete-task-btn" onclick="btnDeleteTask('${todoObject}')">delete
                         </button>
-                    </p>`;
+                    </div>`;
     ToDoTasksList = ToDoTasksList + todoHtml;
   }
   document.querySelector('.task-list').innerHTML = ToDoTasksList;
