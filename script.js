@@ -18,7 +18,19 @@ showingToDoTasks();
 function showingToDoTasks(){
   let ToDoTasksList = ``;
 
-  for(let index = 0; index < toDoTasks.length; index++){
+  // for(let index = 0; index < toDoTasks.length; index++){
+  //   let todoObject = toDoTasks[index];
+  //   let name = todoObject.name;
+  //   let dueDate = todoObject.dueDate;
+  //   let todoHtml = `<div class="task">
+  //                       <p>${name}</p> <p class="date-class">${dueDate}</p>
+  //                       <button class="delete-task-btn" onclick="btnDeleteTask('${todoObject}')">delete
+  //                       </button>
+  //                   </div>`;
+  //   ToDoTasksList = ToDoTasksList + todoHtml;
+  // }
+
+  toDoTasks.forEach((value, index) => {
     let todoObject = toDoTasks[index];
     let name = todoObject.name;
     let dueDate = todoObject.dueDate;
@@ -28,7 +40,8 @@ function showingToDoTasks(){
                         </button>
                     </div>`;
     ToDoTasksList = ToDoTasksList + todoHtml;
-  }
+  });
+
   document.querySelector('.task-list').innerHTML = ToDoTasksList;
 }
 
